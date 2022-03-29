@@ -1,0 +1,121 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #199adb, #a53ad6);
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.a1-button{
+  background: linear-gradient(0 ,#00BCB4, #C4E86B)
+}
+.a2-button{
+  background: linear-gradient(0 ,#FF7D58, #FFCC4B)
+}
+.a3-button{
+  background: linear-gradient(140deg ,#02889B, #06C2AE)
+}
+.a4-button{
+  background: linear-gradient(0 ,#00BCB4, #C4E86B)
+}
+.a5-button{
+  background: linear-gradient(0 ,#FF7D58, #FFCC4B)
+}
+.a6-button{
+  background: linear-gradient(140deg ,#02889B, #06C2AE);
+}
+.a7-button{
+  background: linear-gradient(0 ,#00BCB4, #C4E86B);
+}
+.a8-button{
+  background: linear-gradient(0 ,#FF7D58, #FFCC4B);
+}
+.a9-button{
+  background: linear-gradient(140deg ,#02889B, #06C2AE);
+}
+
+.del-button{
+  background: linear-gradient(223deg ,#FE1157, #FF809D);
+}
+
+.close-button{
+  background: linear-gradient(24deg ,#851515, #FE1157);
+}
+
+.div-button{
+  background: linear-gradient(1deg ,#72D5FF, #1B81BD);
+}
+
+.mul-button{
+  background: linear-gradient(1deg ,#72D5FF, #1B81BD);
+}
+.add-button{
+  background: linear-gradient(90deg ,#72D5FF, #1B81BD);
+}
+.min-button{
+  background: linear-gradient(180deg ,#72D5FF, #1B81BD);
+}
+.dot-button{
+  background: linear-gradient(344deg ,#FF72E3, #CDA1F1);
+}
+
+.a0-button{
+  background: linear-gradient(94deg ,#FF72E3, #CDA1F1);
+}
+
+.equal-button{
+  background: linear-gradient(180deg ,#FF72E3, #CDA1F1);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  /* background-color: rgba(255, 255, 255, .75); */
+}
+
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
